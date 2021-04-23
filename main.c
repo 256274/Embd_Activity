@@ -1,3 +1,4 @@
+
 #include <avr/io.h>
 #include<util/delay.h>
 #include<avr/interrupt.h>
@@ -25,7 +26,7 @@ sei();
             if(FLAG==1&&FLAG1==1) // press switch
             {
             PORTB|=(1<<PB0);
-            _delay_ms(1000);
+            _delay_ms(6000);
             FLAG = 0;
             FLAG1 = 0;
             }
@@ -34,11 +35,13 @@ sei();
             _delay_ms(1000);
             }
     }
+
     return 0;
 }
 
 ISR(INT0_vect)
 {
+
     FLAG = 1;
 }
 
