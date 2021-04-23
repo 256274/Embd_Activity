@@ -1,4 +1,4 @@
-# Embd_Activity
+# Embedded Activity
 
 ## Activity 1
 
