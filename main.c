@@ -1,4 +1,3 @@
-
 #include <avr/io.h>
 #include<util/delay.h>
 #include<avr/interrupt.h>
@@ -35,13 +34,11 @@ sei();
             _delay_ms(1000);
             }
     }
-
     return 0;
 }
 
 ISR(INT0_vect)
 {
-
     FLAG = 1;
 }
 
