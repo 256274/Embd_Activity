@@ -1,5 +1,7 @@
 # Embedded Activity
 
+[![CI](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml/badge.svg)](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml)
+
 ## Activity 1
 
 ### Button sensor and turn on heater
