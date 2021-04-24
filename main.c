@@ -30,7 +30,7 @@ sei();
             FLAG1 = 0;
             }
             else{
-            PORTB&=~(1<<PB0);
+            PORTB&=~(1<<PB0); // turn off LED
             _delay_ms(1000);
             }
     }
