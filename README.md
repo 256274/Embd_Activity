@@ -1,6 +1,6 @@
 # Embedded Activity
 
-[![CI](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml/badge.svg)](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml)
+[![CI](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml/badge.svg)](https://github.com/256274/Embd_Activity/actions/workflows/blank.yml) [![Compile-Linux](https://github.com/256274/Embd_Activity/actions/workflows/compile.yml/badge.svg)](https://github.com/256274/Embd_Activity/actions/workflows/compile.yml)
 
 ## Activity 1
 
