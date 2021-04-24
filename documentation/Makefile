@@ -1,4 +1,4 @@
-DOXY_FILE = Blink
+DOXY_FILE = blinky
 doc:
 	doxygen ./$(DOXY_FILE)
 
