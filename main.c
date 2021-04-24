@@ -24,7 +24,7 @@ sei();
     while(1){
             if(FLAG==1&&FLAG1==1) // press switch
             {
-            PORTB|=(1<<PB0);
+            PORTB|=(1<<PB0); // glow LED
             _delay_ms(6000);
             FLAG = 0;
             FLAG1 = 0;
