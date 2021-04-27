@@ -3,7 +3,8 @@ PROJ_NAME = Blink
 BUILD_DIR = Build
 
 # All Source code files
-SRC = main.c
+SRC = SeatHeatingApp.c\
+src\activity1.c
 
 # All header file paths
 INC = -I inc
