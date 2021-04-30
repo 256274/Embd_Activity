@@ -18,5 +18,5 @@ uint16_t Read_TEMP(uint8_t ch)
     while(!(ADCSRA&(1<<ADIF)));
     //Clear ADIF by writing one to it
     ADCSRA|=(1<<ADIF);
-    return(ADC);
+    return(ADC); // Returns the digital value
 }

@@ -1,13 +1,15 @@
+#include<avr/io.h>
+
 #ifndef ACTIVITY3_H_INCLUDED
 #define ACTIVITY3_H_INCLUDED
 
-/** \brief It shows or displays different levels of temperatures
+/** \brief It returns
  *
- * \param Registers of MCU are used.
- * \return no return
+ * \param A 16-bit number which is used to select the temperature level
+ * \return returns a 8-bit number
  *
  */
 
-void Temp_Level(void);
+uint8_t Temp_Level(uint16_t Select_Temp);
 
 #endif // ACTIVITY3_H_INCLUDED

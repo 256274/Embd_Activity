@@ -4,7 +4,7 @@
 
 #define TEMP_LEVEL OCR1A
 
-void Temp_Level(void)
+uint8_t Temp_Level(uint16_t Select_Temp)
 {
     //Timer/Counter registers
     TCCR1A|=(1<<COM1A1)|(1<<WGM10)|(1<<WGM11); // Fast PWM and non-inverting mode
@@ -12,16 +12,26 @@ void Temp_Level(void)
     DDRB|=(1<<PB1); // Pin B1 is output  pin
     // Insert code
 
-    while(1)
-    {
-        TEMP_LEVEL=200; //20 degree C
-        _delay_ms(1000);
-        TEMP_LEVEL=500; //25 degree C
-        _delay_ms(1000);
-        TEMP_LEVEL=700; //29 degree C
-        _delay_ms(1000);
-        TEMP_LEVEL=1024; //33 degree C
-        _delay_ms(1000);
-    }
+   if((Select_Temp>=0 && (Select_Temp<=200)))
+        {
+            TEMP_LEVEL=205; //20 degree C
+            return 20;
+        }
+    else if((Select_Temp>=210 && (Select_Temp<=500)))
+        {
+            TEMP_LEVEL=410; //20 degree C
+            return 25;
+        }
+    else if((Select_Temp>=510 && (Select_Temp<=700)))
+        {
+            TEMP_LEVEL=717; //20 degree C
+            return 29;
+        }
+    else
+        {
+            TEMP_LEVEL=973; //20 degree C
+            return 33;
+        }
+
 }
 
