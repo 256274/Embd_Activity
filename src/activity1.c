@@ -26,15 +26,14 @@ EIMSK|=(1<<INT0)|(1<<INT1); // External Interrupt masking for interrupt vector
 
 sei();
 
-
   while(1){
             if(SEAT_BUTTON==1 && HEATER_BUTTON==1) // press switch
             {
             LED|=(1<<PB0);      // Glow LED
             _delay_ms(1000);
 
-            //SEAT_BUTTON = 0;
-            //HEATER_BUTTON = 0;
+            SEAT_BUTTON = 0;
+            HEATER_BUTTON = 0;
             break;
             }
             else{
